@@ -1,0 +1,35 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>SI Interface</h1>
+    </header>
+    
+    <button class="activate" disabled={{buttonActivateStateDisabled}}>Activate</button>
+    <button class="deactivate" disabled={{buttonDectivateStateDisabled}}>Deactivate</button><br/><br/>
+    <form class="setActivePower">
+        <!--<input type="text" name="text" placeholder="Type to add new tasks" />-->
+        <input type="text" name="activePower" placeholder="Enter Active Power" />
+        <button class="activeBtn">SetActivePower</button>
+    </form>
+    <br /><br />
+
+    <form class="setUpperState">
+      <input type="text" name="upperState" placeholder="Upper State" />
+      <button class="setUpperState">Set Uppperstate</button>
+    </form>
+    <br />
+    <form class="setLowerState">
+      <input type="text" name="lowerState" placeholder="Lower State" />
+      <button class="setLowerState">Set Lowerstate</button>
+    </form>
+
+
+     {{#each socs}}
+        {{> soc}}
+      {{/each}}
+  </div>
+</body>
+ 
+<template name="soc">
+  <h2>SOC: {{message}}% at {{ts}}</h2>
+</template>
