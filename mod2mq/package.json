@@ -1,0 +1,13 @@
+{
+  "name": "mod2mq",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "bufferutil": "^1.2.1",
+    "meteor-node-stubs": "^0.2.3",
+    "mqtt": "^1.10.0",
+    "utf-8-validate": "^1.2.1"
+  }
+}
